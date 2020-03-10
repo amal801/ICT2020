@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containers">
+        <div class="row">
+            <div class="col col-12 col-sm-8 col-m-4">
+                <form>
+                <table class="table">
+                    <tr>
+                        <td>EVEN OR ODD</td>
+                        <td><input type="text" class="form-control" id="evenorodd"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-success" onclick="check()">CHECK</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="result"></p></td>
+                    </tr>
+                </table>
+                </form>
+                <script>
+                    function check()
+                    {
+                        var x=parseInt(document.getElementById("evenorodd").value);
+                        if(x%2==0)
+                        {
+                            var z="even number"
+                        }
+                        else
+                        {
+                            var z="odd number"
+                        }
+                        console.log(z);
+                        document.getElementById("result").innerHTML=z;
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
